@@ -5,10 +5,17 @@
  */
 package br.com.faete.locadora.dao;
 
+import br.com.faete.locadora.core.modelo.Locacao;
+
 /**
  *
  * @author sticdev30
  */
-public class LocacaoDAO {
+public class LocacaoDAO extends BaseDAO{
+
+    @Override
+    public Class getClassUnit() {
+        return Locacao.class;
+    }
     
 }
